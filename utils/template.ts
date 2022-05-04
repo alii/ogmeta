@@ -56,6 +56,8 @@ const css = (dark: boolean) => `
     }
 
     .subtitle {
+        margin-left: 4px;
+        margin-top: 10px;
         font-size: 2.8rem;
         opacity: 0.5;
         font-weight: 500;
@@ -109,7 +111,7 @@ export function getHtml({
             <body>
                 <div class="container">
                     <h1 class="title">${title}</h1>
-                    ${subtitle ? `<h2 class="subtitle">Position at ${subtitle}</h2>` : ""}
+                    ${subtitle ? `<h2 class="subtitle">${subtitle}</h2>` : ""}
                     <div class="footer">
                         <img alt="logo" src="https://cdn.onboarded.app/assets/logo.png" width="85" height="85"/>
                         <span>hop.io</span>
