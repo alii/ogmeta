@@ -1,4 +1,5 @@
 import { readFileSync } from "fs";
+import { logo } from "./logo";
 
 const rglr = readFileSync(`${__dirname}/../fonts/Inter-Regular.woff2`).toString("base64");
 const bold = readFileSync(`${__dirname}/../fonts/Inter-Bold.woff2`).toString("base64");
@@ -113,8 +114,7 @@ export function getHtml({
                     <h1 class="title">${title}</h1>
                     ${subtitle ? `<h2 class="subtitle">${subtitle}</h2>` : ""}
                     <div class="footer">
-                        <img alt="logo" src="https://cdn.onboarded.app/assets/logo.png" width="85" height="85"/>
-                        <span>hop.io</span>
+                        ${logo(dark)}
                     </div>
                 </div>
             </body>
