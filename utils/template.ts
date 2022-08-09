@@ -1,24 +1,8 @@
-import { readFileSync } from "fs";
 import { logo } from "./logo";
-
-const rglr = readFileSync(`${__dirname}/../fonts/Inter-Regular.woff2`).toString("base64");
-const bold = readFileSync(`${__dirname}/../fonts/Inter-Bold.woff2`).toString("base64");
 
 // prettier-ignore
 const css = (dark: boolean) => `
-    @font-face {
-        font-family: 'Inter';
-        font-style:  normal;
-        font-weight: normal;
-        src: url(data:font/woff2;charset=utf-8;base64,${rglr}) format('woff2');
-    }
-
-    @font-face {
-        font-family: 'Inter';
-        font-style:  normal;
-        font-weight: bold;
-        src: url(data:font/woff2;charset=utf-8;base64,${bold}) format('woff2');
-    }
+    @import url('https://hop.io/fonts/gt-walsheim/stylesheet.css');
 
     * {
         margin: 0;
@@ -26,7 +10,7 @@ const css = (dark: boolean) => `
     }
 
     body {
-        font-family: 'Inter', sans-serif;
+        font-family: 'GT Walsheim', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         height: 100vh;
