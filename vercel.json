@@ -1,14 +1,14 @@
 {
-	"$schema": "https://openapi.vercel.sh/vercel.json",
-	"functions": {
-		"api/**": {
-			"memory": 3008
-		}
-	},
-	"rewrites": [
-		{
-			"source": "/:match*",
-			"destination": "/api/:match"
-		}
-	]
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/**": {
+      "memory": 3008
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/:match*",
+      "destination": "/api/:match"
+    }
+  ]
 }

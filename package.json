@@ -1,20 +1,21 @@
 {
-	"name": "@hopinc/ogmeta",
-	"version": "1.0.0",
-	"repository": "https://github.com/hopinc/ogmeta",
-	"author": "Alistair Smith <hi@alistair.sh>",
-	"packageManager": "yarn@3.2.0",
-	"scripts": {
-		"start": "vercel dev"
-	},
-	"devDependencies": {
-		"@vercel/node": "^1.15.0",
-		"typescript": "^4.6.4",
-		"vercel": "^24.2.0"
-	},
-	"dependencies": {
-		"chrome-aws-lambda": "^10.1.0",
-		"puppeteer-core": "^13.7.0",
-		"zod": "^3.14.4"
-	}
+  "name": "@hopinc/ogmeta",
+  "version": "1.0.0",
+  "repository": "https://github.com/hopinc/ogmeta",
+  "author": "Alistair Smith <hi@alistair.sh>",
+  "packageManager": "yarn@3.2.0",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "devDependencies": {
+    "@vercel/node": "^1.15.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.6.4",
+    "vercel": "^24.2.0"
+  },
+  "dependencies": {
+    "chrome-aws-lambda": "^10.1.0",
+    "puppeteer-core": "^13.7.0",
+    "zod": "^3.14.4"
+  }
 }

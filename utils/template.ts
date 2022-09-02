@@ -76,15 +76,15 @@ const css = (dark: boolean) => `
 `;
 
 export function getHtml({
-	title,
-	subtitle,
-	dark = true,
+  title,
+  subtitle,
+  dark = true,
 }: {
-	title: string;
-	subtitle?: string;
-	dark: boolean;
+  title: string;
+  subtitle?: string;
+  dark: boolean;
 }) {
-	return `
+  return `
         <!DOCTYPE html>
         <html>
             <meta charset="utf-8">
