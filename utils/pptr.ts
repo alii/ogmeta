@@ -21,5 +21,8 @@ export async function getScreenshot(html: string, type: ScreenshotOptions["type"
 	await page.setViewport({ width: 2048, height: 1170 });
 	await page.setContent(html);
 	await page.waitForNetworkIdle();
-	return await page.screenshot({ type });
+
+	return await page.screenshot({
+		type,
+	});
 }
