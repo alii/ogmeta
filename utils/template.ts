@@ -52,7 +52,8 @@ const css = (dark: boolean) => `
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0 8%;
+        padding-left: 8%;
+        padding-right: 3%;
         height: 100%;
     }
 
