@@ -5,8 +5,7 @@
 	"author": "Alistair Smith <hi@alistair.sh>",
 	"packageManager": "yarn@3.2.3",
 	"scripts": {
-		"start": "vercel dev",
-		"build": "tsc"
+		"start": "vercel dev"
 	},
 	"devDependencies": {
 		"@vercel/node": "^2.5.21",
