@@ -29,7 +29,7 @@ const css = (dark: boolean) => `
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-left: 8%;
+        padding: 0 8%;
         height: 100%;
     }
 
@@ -76,23 +76,26 @@ const css = (dark: boolean) => `
 `;
 
 export function getHtml({
-  title,
-  subtitle,
-  dark = true,
+	title,
+	subtitle,
+	dark = true,
 }: {
-  title: string;
-  subtitle?: string;
-  dark: boolean;
+	title: string;
+	subtitle?: string;
+	dark: boolean;
 }) {
-  return `
+	return `
         <!DOCTYPE html>
         <html>
-            <meta charset="utf-8">
-            <title>hop.io</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <style>
-                ${css(dark)}
-            </style>
+            <head>
+                <meta charset="utf-8">
+                <title>hop.io</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <style>
+                    ${css(dark)}
+                </style>
+            </head>
+
             <body>
                 <div class="container">
                     <h1 class="title">${title}</h1>
