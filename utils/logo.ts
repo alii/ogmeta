@@ -1,7 +1,7 @@
 export function logo(dark: boolean) {
-  const fill = dark ? "#ffffff" : "#000000";
+	const fill = dark ? '#ffffff' : '#000000';
 
-  return `
+	return `
 		<svg xmlns="http://www.w3.org/2000/svg" style="opacity: 0.75;" width="85px" height="85px" viewBox = "0 0 160 100" >
 			<g data-name="Layer 2">
 				<g data-name="Layer 1">

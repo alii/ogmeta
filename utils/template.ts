@@ -1,4 +1,4 @@
-import { logo } from "./logo";
+import {logo} from './logo';
 
 // prettier-ignore
 const css = (dark: boolean) => `
@@ -75,15 +75,7 @@ const css = (dark: boolean) => `
     }
 `;
 
-export function getHtml({
-	title,
-	subtitle,
-	dark = true,
-}: {
-	title: string;
-	subtitle?: string;
-	dark: boolean;
-}) {
+export function getHtml({title, subtitle, dark = true}: {title: string; subtitle?: string; dark: boolean}) {
 	return `
         <!DOCTYPE html>
         <html>
@@ -99,7 +91,7 @@ export function getHtml({
             <body>
                 <div class="container">
                     <h1 class="title">${title}</h1>
-                    ${subtitle ? `<h2 class="subtitle">${subtitle}</h2>` : ""}
+                    ${subtitle ? `<h2 class="subtitle">${subtitle}</h2>` : ''}
                     <div class="footer">
                         ${logo(dark)}
                     </div>
