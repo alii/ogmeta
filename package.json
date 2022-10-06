@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"repository": "https://github.com/hopinc/ogmeta",
 	"author": "Alistair Smith <hi@alistair.sh>",
-	"packageManager": "yarn@3.2.3",
+	"packageManager": "yarn@3.2.4",
 	"scripts": {
 		"start": "vercel dev"
 	},
